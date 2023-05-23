@@ -386,6 +386,10 @@ body {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
   z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .copy-tooltip._show {
@@ -2273,6 +2277,14 @@ button.swiper-pagination-bullet {
     font-size: 0.875rem;
   }
 
+  .copy-tooltip {
+    top: 15px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+            transform: translate(-50%, 0px);
+  }
+
   .page__about {
     padding: 6.25rem 0 2.5rem 0;
   }
@@ -2336,9 +2348,6 @@ button.swiper-pagination-bullet {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .groups-services__title {
@@ -2420,7 +2429,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 29.99875em) {
   .services__item {
-    min-height: 450px;
+    min-height: 300px;
   }
 }
 

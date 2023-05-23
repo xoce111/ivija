@@ -3976,7 +3976,7 @@
                 document.body.removeChild(tempInput);
                 const tooltipElement = textElement.parentElement.querySelector(".copy-tooltip");
                 textElement.getBoundingClientRect();
-                tooltipElement.style.left = `${event.clientX + window.pageXOffset - tooltipElement.offsetWidth + 117.5}px`;
+                tooltipElement.style.left = `${event.clientX + window.pageXOffset}px`;
                 tooltipElement.style.top = `${event.clientY + window.pageYOffset - tooltipElement.offsetHeight - 15}px`;
                 tooltipElement.classList.add("_show");
                 clearTimeout(tooltipTimer);
@@ -3989,6 +3989,7 @@
                         once: true
                     });
                 }), 2e3);
+                tooltipElement.style.top = `${event.clientY + window.pageYOffset - tooltipElement.offsetHeight - 10}px`;
             }));
         }));
         window["FLS"] = true;
