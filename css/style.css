@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;
 
-0,500;0,700;1,300&display=swap);
+0,400;0,500;0,700;1,300;1,400&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
 @charset "UTF-8";
 * {
@@ -457,8 +457,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
           filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
 }
@@ -737,7 +735,7 @@ body {
           flex: 0 1 50%;
   overflow: hidden;
   height: 0;
-  border-radius: 10px;
+  border-radius: 5px;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
@@ -805,6 +803,7 @@ body {
   position: relative;
   padding-bottom: 85%;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .instagram-blog__item:hover img {
@@ -855,14 +854,14 @@ body {
   width: 100%;
   background-color: #fff;
   height: 14%;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 5px 5px;
 }
 
 .telegram-blog__item {
   display: block;
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: rgb(255, 255, 255);
   -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
   transition: -webkit-box-shadow 0.3s ease 0s;
@@ -903,13 +902,13 @@ body {
 
 .telegram-blog__body {
   z-index: 5;
-  border-radius: 0 0 20px;
+  border-radius: 0 0 5px;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
   height: 14%;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   padding: 4% 20px 0 20px;
@@ -1232,16 +1231,19 @@ body {
   border-radius: 50%;
   background-color: #fff;
   padding: 12px;
-  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
-  transition: -webkit-box-shadow 0.3s ease 0s;
-  -o-transition: box-shadow 0.3s ease 0s;
-  transition: box-shadow 0.3s ease 0s;
-  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s, -webkit-transform 0.4s linear 0.1s;
+  transition: -webkit-box-shadow 0.3s ease 0s, -webkit-transform 0.4s linear 0.1s;
+  -o-transition: box-shadow 0.3s ease 0s, transform 0.4s linear 0.1s;
+  transition: box-shadow 0.3s ease 0s, transform 0.4s linear 0.1s;
+  transition: box-shadow 0.3s ease 0s, transform 0.4s linear 0.1s, -webkit-box-shadow 0.3s ease 0s, -webkit-transform 0.4s linear 0.1s;
 }
 
 .icons-contacts-get-in-touch__icon:hover {
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
           box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .icons-contacts-get-in-touch__svg {
@@ -1253,6 +1255,12 @@ body {
   -webkit-transform: translate(-2px, 1px);
       -ms-transform: translate(-2px, 1px);
           transform: translate(-2px, 1px);
+}
+
+.icons-contacts-get-in-touch__svg_i {
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 
 /**
