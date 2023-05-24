@@ -23,7 +23,7 @@ body {
 body {
   color: #5A5A5A;
   line-height: 1;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
