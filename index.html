@@ -6,13 +6,13 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230525144109">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230525171202">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body data-sticky>
+<body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
@@ -23,20 +23,19 @@
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a data-goto-speed="1000" data-goto=".page__about" href="#" class="menu__link">О
-									себе</a></li>
-							<li class="menu__item"><a data-goto-speed="1000" data-goto=".page__services" href="#" class="menu__link">Услуги</a></li>
-							<li class="menu__item"><a data-goto-speed="1000" data-goto=".page__blog" href="#" class="menu__link">Блог</a></li>
-							<li class="menu__item"><a data-goto-speed="1000" data-goto-header data-goto=".page__faq" href="#" class="menu__link">FAQ</a></li>
-							<li class="menu__item"><a data-goto-speed="1000" data-goto=".page__reviews" href="#" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="#section-1" class="navigator menu__link">О себе</a></li>
+							<li class="menu__item"><a href="#section-2" class="navigator menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="#section-3" class="navigator menu__link">Блог</a></li>
+							<li class="menu__item"><a href="#section-4" class="navigator menu__link">FAQ</a></li>
+							<li class="menu__item"><a href="#section-5" class="navigator menu__link">Отзывы</a></li>
 						</ul>
 					</nav>
 				</div>
-				<a data-goto-speed="1000" data-goto-header data-goto=".page__get-in-touch" class="header__button button" href="#">Записаться</a>
+				<a class="header__button button" href="#section-6">Записаться</a>
 			</div>
 		</header>
 		<main class="page">
-			<div data-watch="navigator" data-watch-once class="section _watcher-view page__about about">
+			<div id="section-1" class="section page__about about">
 				<div class="about__container">
 					<div class="about__body body-about">
 						<div class="body-about__text text-about">
@@ -52,7 +51,7 @@
 					</div>
 				</div>
 			</div>
-			<div data-watch="navigator" data-watch-once data-watch class="section page__services">
+			<div id="section-2" class="section page__services">
 				<div class="services__container">
 					<div class="services__header">
 						<h2 class="services__title title">Услуги и направления работы</h2>
@@ -235,7 +234,7 @@
 					</div>
 				</div>
 			</div>
-			<div data-watch="navigator" data-watch-once data-watch class="section page__blog">
+			<div id="section-3" class="section page__blog">
 				<div class="blog__container">
 					<div class="blog__header header-blog">
 						<h3 class="header-blog__title title">Instagram</h3>
@@ -332,7 +331,7 @@
 					</div>
 				</div>
 			</div>
-			<div data-watch="navigator" data-watch-once data-watch class="section page__faq">
+			<div id="section-4" class="section page__faq">
 				<div class="faq__container">
 					<h3 class="faq__title title">
 						Ответы на часто задаваемые вопросы
@@ -363,7 +362,7 @@
 					</div>
 				</div>
 			</div>
-			<div data-watch="navigator" data-watch-once data-watch class="section page__reviews">
+			<div id="section-5" class="section page__reviews">
 				<div class="reviews__container">
 					<h3 class="reviews__title title">Отзывы клиентов</h3>
 					<div class="reviews__body">
@@ -412,7 +411,7 @@
 					</div>
 				</div>
 			</div>
-			<div data-watch="navigator" data-watch-once data-watch class="section page__get-in-touch">
+			<div id="section-6" class="section page__get-in-touch">
 				<div class="get-in-touch__container">
 					<h3 class="get-in-touch__title title">Записаться на прием</h3>
 					<div class="get-in-touch__body">
@@ -490,7 +489,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20230525144109"></script>
+	<script src="js/app.min.js?_v=20230525171202"></script>
 </body>
 
 </html>
