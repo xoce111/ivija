@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;
+
+0,400;0,500;0,700;1,300;1,400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap);
 @charset "UTF-8";
 * {
   padding: 0px;
@@ -22,7 +25,7 @@ body {
 body {
   color: #5A5A5A;
   line-height: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -73,6 +76,11 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -245,7 +253,7 @@ body {
 }
 
 .button:active {
-  background-color: #66a89a;
+  background-color: #599487;
 }
 
 .header {
@@ -333,6 +341,7 @@ body {
 }
 
 .footer__text {
+  position: relative;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -454,8 +463,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3px;
-  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
-          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.015)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222));
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03));
 }
 
 .text-about {
@@ -1246,18 +1255,6 @@ body {
 .icons-contacts-get-in-touch__svg {
   width: 24px;
   fill: #72BAAC;
-}
-
-.icons-contacts-get-in-touch__svg_t {
-  -webkit-transform: translate(-2px, 1px);
-      -ms-transform: translate(-2px, 1px);
-          transform: translate(-2px, 1px);
-}
-
-.icons-contacts-get-in-touch__svg_i {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
 }
 
 /**
@@ -2324,8 +2321,7 @@ button.swiper-pagination-bullet {
 
   .body-about__image img {
     position: relative;
-    height: 400px;
-    max-height: 400px;
+    max-width: 100%;
   }
 
   .text-about {
