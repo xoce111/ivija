@@ -256,6 +256,13 @@ body {
   background-color: #599487;
 }
 
+.just-validate-error-label {
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+  font-size: 0.75rem;
+}
+
 .header {
   -webkit-box-shadow: 0 0 1.25rem rgba(133, 133, 133, 0.1);
           box-shadow: 0 0 1.25rem rgba(133, 133, 133, 0.1);
@@ -268,7 +275,7 @@ body {
 }
 
 .header__container {
-  min-height: 100px;
+  min-height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,7 +347,7 @@ body {
 }
 
 .footer {
-  padding: 80px 0 40px 0;
+  padding: 80px 0 0px 0;
   overflow: hidden;
 }
 
@@ -383,6 +390,12 @@ body {
   cursor: pointer;
   font-style: italic;
   text-decoration: underline;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.75rem;
 }
 
 .copy-tooltip {
@@ -428,7 +441,7 @@ body {
 
 .page__faq {
   background-color: #fcfcfc;
-  padding: 5rem 0;
+  padding: 6.25rem 0;
 }
 
 .page__reviews {
@@ -512,7 +525,7 @@ body {
 }
 
 .services__header {
-  margin-bottom: 3.75rem;
+  margin-bottom: 5rem;
 }
 
 .services__title {
@@ -520,6 +533,8 @@ body {
 }
 
 .services__items {
+  margin: 0 auto;
+  max-width: 900px;
   margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,10 +675,6 @@ body {
           transform: rotateY(180deg);
 }
 
-.groups-services {
-  margin-bottom: 4.375rem;
-}
-
 .groups-services__title {
   margin-bottom: 1.875rem;
   font-size: 1.5rem;
@@ -714,9 +725,9 @@ body {
   content: "";
   position: absolute;
   top: 135px;
-  left: -100px;
+  left: -50px;
   background-color: #fff;
-  width: 250px;
+  width: 200px;
   height: 100px;
   border-radius: 55% 45% 24% 76%/73% 95% 5% 27%;
   -webkit-transform: rotate(12deg) scale(1.3) skew(33deg, -10deg);
@@ -736,7 +747,7 @@ body {
   color: #444;
   position: absolute;
   top: 155px;
-  left: -55px;
+  left: -20px;
   z-index: 3;
   -webkit-transform: rotate(6deg);
       -ms-transform: rotate(6deg);
@@ -756,12 +767,8 @@ body {
 }
 
 .group-body-groups-services__image_a img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+  position: relative;
+  max-width: 100%;
 }
 
 .group-body-groups-services__image_second {
@@ -997,9 +1004,9 @@ body {
 }
 
 .spollers-faq__title {
+  padding: 15px 0;
   width: 100%;
   font-weight: 500;
-  margin-bottom: 1.25rem;
   letter-spacing: 0.01875rem;
   font-size: 1.25rem;
   position: relative;
@@ -1008,23 +1015,34 @@ body {
   text-align: left;
 }
 
-.spollers-faq__title::before {
+.spollers-faq__title::before,
+.spollers-faq__title::after {
   content: "";
-  display: inline-block;
-  background: url(../img/arrow.svg) no-repeat 50% 50%;
   position: absolute;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.5s ease 0s;
-  transition: -webkit-transform 0.5s ease 0s;
-  -o-transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  top: 50%;
+  width: 13px;
+  height: 2px;
+  background-color: #333;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.spollers-faq__title::before {
+  top: 50%;
+  left: 17px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.spollers-faq__title::after {
+  left: 25px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .spollers-faq__body {
@@ -1032,10 +1050,16 @@ body {
 }
 
 ._spoller-active::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+._spoller-active::after {
   content: "";
-  -webkit-transform: rotateZ(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotateZ(0deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .reviews__title {
@@ -1098,9 +1122,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
   row-gap: 40px;
   border-radius: 5px;
   background-color: #fcfcfc;
@@ -1121,6 +1145,7 @@ body {
 
 .form-get-in-touch input,
 .form-get-in-touch__textarea {
+  width: 100%;
   padding: 15px;
   border-bottom: 1px solid rgb(219, 219, 219);
   background-color: #fcfcfc;
@@ -1131,10 +1156,15 @@ body {
 
 .form-get-in-touch input:focus,
 .form-get-in-touch__textarea:focus {
+  outline: none;
+  z-index: 10;
   border-bottom: 1px solid #72BAAC;
+  -webkit-box-shadow: 0px 24px 20px -11px rgba(160, 238, 222, 0.1);
+          box-shadow: 0px 24px 20px -11px rgba(160, 238, 222, 0.1);
 }
 
 .form-get-in-touch__inputs {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(80px, 1fr))[2];
@@ -1145,21 +1175,24 @@ body {
   margin-bottom: 20px;
 }
 
-.form-get-in-touch__topic {
+.form-get-in-touch__label {
+  position: relative;
+}
+
+.form-get-in-touch__label_t {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.form-get-in-touch__label_m {
   -ms-grid-column-span: 2;
   grid-column: span 2;
 }
 
 .form-get-in-touch__textarea {
   line-height: 135%;
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
   min-height: 203px;
   resize: vertical;
-}
-
-._form-focus {
-  outline: none;
 }
 
 ._form-error {
@@ -1177,6 +1210,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#72BAAC), to(#b3f7e8));
   background: -o-linear-gradient(left, #72BAAC 0%, #b3f7e8 100%);
   background: linear-gradient(to right, #72BAAC 0%, #b3f7e8 100%);
+  z-index: 100;
   -webkit-box-shadow: 10px 10px 79px 5px rgba(176, 250, 235, 0.5);
           box-shadow: 10px 10px 79px 5px rgba(176, 250, 235, 0.5);
   border-radius: 5px;
@@ -2120,15 +2154,15 @@ button.swiper-pagination-bullet {
 
   .group-body-groups-services__image_n::before {
     top: 100px;
-    left: -42px;
-    width: 150px;
+    left: -32px;
+    width: 135px;
     height: 60px;
   }
 
   .group-body-groups-services__image_n::after {
     font-size: 1.125rem;
-    top: 107px;
-    left: -30px;
+    top: 109px;
+    left: -20px;
   }
 
   .get-in-touch__body {
@@ -2297,11 +2331,11 @@ button.swiper-pagination-bullet {
   }
 
   .page__about {
-    padding: 6.25rem 0 2.5rem 0;
+    padding: 6.25rem 0 3.75rem 0;
   }
 
   .page__services {
-    padding: 2.5rem 0;
+    padding: 3.125rem 0;
   }
 
   .page__blog {
@@ -2341,6 +2375,14 @@ button.swiper-pagination-bullet {
     font-size: 1.5rem;
   }
 
+  .services__header {
+    margin-bottom: 2.5rem;
+  }
+
+  .services__items {
+    margin-bottom: 3.75rem;
+  }
+
   .services__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 calc(100% - 1rem);
@@ -2365,7 +2407,7 @@ button.swiper-pagination-bullet {
   }
 
   .body-groups-services__group:not(:last-child) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 3.125rem;
   }
 
   .body-groups-services__group:nth-child(even) {
@@ -2389,21 +2431,28 @@ button.swiper-pagination-bullet {
 
   .group-body-groups-services__image_n::before {
     top: 90px;
-    left: -30px;
-    width: 130px;
+    left: -20px;
+    width: 120px;
     height: 60px;
   }
 
   .group-body-groups-services__image_n::after {
     font-size: 1rem;
-    top: 104px;
-    left: -14px;
-    max-width: 120px;
+    top: 102px;
+    left: -8px;
+    max-width: 106px;
   }
 
   .group-body-groups-services__image_a {
-    width: 100%;
-    min-height: 180px;
+    max-width: 100%;
+  }
+
+  .group-body-groups-services__image_second {
+    padding-bottom: 0;
+  }
+
+  .group-body-groups-services__image_third {
+    padding-bottom: 0;
   }
 
   .group-body-groups-services__text {
@@ -2462,6 +2511,6 @@ button.swiper-pagination-bullet {
     font-size: 0.875rem;
     top: 83px;
     left: 5px;
-    max-width: 100px;
+    max-width: 95px;
   }
 }
