@@ -4986,7 +4986,7 @@
             xhr.onreadystatechange = function() {
                 if (4 === xhr.readyState) if (200 === xhr.status) console.log("Отправлено");
             };
-            xhr.open("GET", "sendmail.php", true);
+            xhr.open("POST", "sendmail.php", true);
             xhr.send(formData);
             event.target.reset();
         }));

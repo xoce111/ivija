@@ -1280,24 +1280,27 @@ body {
   border-radius: 50%;
   background-color: #fff;
   padding: 12px;
-  -webkit-transition: -webkit-box-shadow 0.3s ease 0s, -webkit-transform 0.4s linear 0.1s;
-  transition: -webkit-box-shadow 0.3s ease 0s, -webkit-transform 0.4s linear 0.1s;
-  -o-transition: box-shadow 0.3s ease 0s, transform 0.4s linear 0.1s;
-  transition: box-shadow 0.3s ease 0s, transform 0.4s linear 0.1s;
-  transition: box-shadow 0.3s ease 0s, transform 0.4s linear 0.1s, -webkit-box-shadow 0.3s ease 0s, -webkit-transform 0.4s linear 0.1s;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 
 .icons-contacts-get-in-touch__icon:hover {
   -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
           box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .icons-contacts-get-in-touch__svg {
   width: 24px;
   fill: #72BAAC;
+}
+
+.icons-contacts-get-in-touch__svg_t {
+  -webkit-transform: translate(-1px, 1px);
+      -ms-transform: translate(-1px, 1px);
+          transform: translate(-1px, 1px);
 }
 
 /**
